@@ -10,9 +10,9 @@ from login_page import LoginPage
 def init_driver(request):
     # Инициализация драйвера
 
-     options = webdriver.ChromeOptions()
-     options.add_argument('--headless')
-     driver = webdriver.Chrome(options=options)
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
+    driver = webdriver.Chrome(options=options)
 
     driver.implicitly_wait(10)
     driver.maximize_window()
