@@ -47,7 +47,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest test_API.py test_Front.py --alluredir=allure-results
+        xvfb-run pytest test_API.py test_Front.py --alluredir=allure-results
         continue-on-error:true
               - name: Load test report history
         uses: actions/checkout@v3
