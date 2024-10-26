@@ -30,6 +30,7 @@ jobs:
         pip install requests
         pip install selenium
         pip install webdriver-manager
+        pip install pyautogui
         pip install allure-pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
